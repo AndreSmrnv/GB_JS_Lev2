@@ -13,7 +13,7 @@ const renderProduct = (title, price) => {
                         <p class="card-text">${price}</p>
                         <button class="buy-btn btn py-2 d-none d-md-inline-block btn-outline-secondary">Купить</button>
                     </div>
-                </div>
+                  </div>
             </div>`;
 };
 
