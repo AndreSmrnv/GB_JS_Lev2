@@ -1,0 +1,8 @@
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.site-header a {
+  color: #8e8e8e;
+  transition: color 0.15s ease-in-out;
+}
