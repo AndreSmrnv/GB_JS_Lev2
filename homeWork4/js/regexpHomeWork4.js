@@ -23,4 +23,4 @@ console.log(sourceTXT.replace(regexp1, ""));
 
 //#2
 const regexp2 = /\s'([a-z]+)|([a-z]+)'\s|(\.)'|(\?)'/gim;
-console.log(sourceTXT.replace(regexp2, "$1$2$3$4"));
+console.log(sourceTXT.replace(regexp2, " $1$2$3$4"));
