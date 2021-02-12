@@ -2,7 +2,7 @@
 
 const app = new Vue({
   el: "#app",
-  data: {    
+  data: {
     notFound: false,
   },
   methods: {
@@ -13,10 +13,6 @@ const app = new Vue({
           console.log(error);
         });
     },
-    
   },
-  mounted() {
-   
-  },
+  mounted() {},
 });
-
