@@ -1,0 +1,30 @@
+{
+    "amount": 0,
+    "countGoods": 0,
+    "contents": [
+        {
+            "id": 457,
+            "title": "Gamepad",
+            "price": 3000,
+            "quantity": 5,
+            "img": "https://via.placeholder.com/250x200.png?text=Gamepad",
+            "show": true
+        },
+        {
+            "id": 456,
+            "title": "Мышка",
+            "price": 1000,
+            "quantity": 1,
+            "img": "https://via.placeholder.com/250x200.png?text=Мышка",
+            "show": true
+        },
+        {
+            "id": 124,
+            "title": "Keyboard",
+            "price": 1600,
+            "quantity": 1,
+            "img": "https://via.placeholder.com/250x200.png?text=Keyboard",
+            "show": true
+        }
+    ]
+}
