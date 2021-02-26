@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Интернет-магазин Lesson3 AndreSmrnv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/1bb2090e76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#" aria-label="Product">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="d-block mx-auto"
+              role="img"
+              viewBox="0 0 24 24"
+              focusable="false"
+            >
+              <title>Product</title>
+              <circle cx="12" cy="12" r="10" />
+              <path
+                d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
+              />
+            </svg>
+          </a>
+          <filter-product ref="filterProduct"></filter-product>
+
+          <!--vue control visible -->
+          <button class="py-2 d-md-inline-block btn btn-outline-secondary" type="button" @click="$refs.cart.showCart()">
+            Корзина
+            <cart-all-quantity ref="cartAllQuantity"></cart-all-quantity>
+          </button>
+          <!--bootstrap control visible -->
+          <!-- <button
+            class="py-2 d-none d-md-inline-block btn btn-outline-secondary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseCart"
+            aria-expanded="false"
+            aria-controls="collapseCart"            
+          >
+            Корзина
+            <span id="cart-quantity" class="badge badge-light d-none">0</span>
+          </button>  -->
+        </div>
+      </header>
+      <main>
+        <cart ref="cart"></cart>
+        <h3 class="container d-flex flex-column flex-md-row justify-content-between flex-wrap">PRODUCTS</h3>
+        <h6 class="container d-flex flex-column flex-md-row justify-content-between flex-wrap" v-if="notFound">
+          Нет данных
+        </h6>
+
+        <products ref="products"></products>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script src="js/AppProduct.js"></script>
+    <script src="js/AppFilter.js"></script>
+    <script src="js/AppCart.js"></script>
+    <script src="js/AppCartAllQuantity.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

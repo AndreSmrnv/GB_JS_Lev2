@@ -1,0 +1,25 @@
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.site-header a {
+  color: #8e8e8e;
+  transition: color 0.15s ease-in-out;
+}
+
+.card-body-search {
+  padding: 4px;
+}
+input[type="search"] {
+  background: #555 url(http://cdn.onlinewebfonts.com/svg/img_517898.png) no-repeat 9px center;
+  background-size: 18px auto;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 55px;
+}
+input[type="search"]:focus {
+  width: 600px;
+  background-color: #ccc;
+  border-color: #333;
+  border: solid 1px #fff;
+}
